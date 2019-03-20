@@ -3,9 +3,9 @@ table a {
 }
 
 fieldset {
-    margin: 30px 0px;
-    /*padding:15px;*/
+    margin: 0;
 }
+
 fieldset a {
     color: #009688;
 }
@@ -13,7 +13,6 @@ video{
     height:240px;
 }
 
-/*这是/index.html的css*/
 .csu-header {
     height: 120px;
     background-image: url(../img/header_background.png);
@@ -32,6 +31,7 @@ video{
 .csu-nav .layui-nav{
     padding:0;
 }
+
 .csu-content {
     text-align: center;
 }
@@ -153,8 +153,7 @@ video{
     margin-bottom: 5px;
     color: gray;
 }
-
-.csu-card-direction,.csu-card-introduction,.csu-card-tutor {
+.csu-detail fieldset{
     margin: 15px 30px;
 }
 

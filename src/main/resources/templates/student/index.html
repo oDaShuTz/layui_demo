@@ -89,23 +89,22 @@
 
 <!--这是自己设定的一些脚本-->
 <script>
-    layui.use('laypage', function () {
+    layui.use('laypage', function(){
         var laypage = layui.laypage;
 
         //执行一个laypage实例
         laypage.render({
             elem: 'csu-page'
-            , count: 35
-            , limit: 10
-            // ,curr:2
-            , jump: function (obj, first) {
-                //obj包含了当前分页的所有参数，比如：
-                console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
-                console.log(obj.limit); //得到每页显示的条数
-
+            ,count: 35
+            ,limit:10
+            ,curr:2//从model里取当前page数
+            ,jump: function(obj, first){
                 //首次不执行
-                if (!first) {
-                    //do something
+                if(!first){
+                    console.log(obj.curr);
+                    //obj.curr是目标页的index
+                    //打开目标页后controller往model里放入学生信息和page数，以便curr参数获得
+                    window.location.href="../student/index.html?page="+obj.curr;
                 }
             }
         });
