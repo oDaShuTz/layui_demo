@@ -9,8 +9,9 @@ fieldset {
 fieldset a {
     color: #009688;
 }
-video{
-    height:240px;
+
+video {
+    height: 240px;
 }
 
 .csu-header {
@@ -24,12 +25,16 @@ video{
     height: 120px;
 }
 
-.csu-nav{
-    padding:0 20px;
+.csu-nav {
+    padding: 0 20px;
 }
 
-.csu-nav .layui-nav{
-    padding:0;
+.csu-nav .layui-nav {
+    padding: 0;
+}
+
+.csu-nav .layui-nav-img {
+    background-size: cover;
 }
 
 .csu-content {
@@ -49,7 +54,6 @@ video{
 
 .csu-bottom span {
     margin: 0px 5px;
-    color: #009688;
 }
 
 .csu-catalog-button {
@@ -67,7 +71,6 @@ video{
     margin: 15px 150px;
 }
 
-/*这是account/login.html的css*/
 .csu-login-main {
     width: 300px;
     margin: 0 auto;
@@ -100,14 +103,12 @@ video{
     right: 0;
 }
 
-/*这是home/index.html的css*/
 .csu-activities-album {
     padding: 30px 15px;
 }
 
 .csu-table {
     table-layout: fixed;
-    margin-bottom: 30px;
 }
 
 .csu-table th a:hover {
@@ -128,6 +129,10 @@ video{
     color: #dddddd;
 }
 
+.csu-color-red {
+    color: red;
+}
+
 .csu-card {
     text-align: center;
     border: 1px solid #dddddd;
@@ -138,8 +143,12 @@ video{
 
 .csu-card-img {
     width: 75%;
+    height: 0;
+    padding-top:105%;
+    margin: auto;
     margin-bottom: 30px;
-    border-radius: 5%
+    border-radius: 5%;
+    background-size: cover;
 }
 
 .csu-card-name {
@@ -153,9 +162,6 @@ video{
     margin-bottom: 5px;
     color: gray;
 }
-.csu-detail fieldset{
-    margin: 15px 30px;
-}
 
 .csu-card-hover:hover {
     background-color: #009688;
@@ -166,21 +172,21 @@ video{
     color: white;
 }
 
+.csu-detail fieldset {
+    margin: 15px 0px;
+    padding: 15px 15px;
+}
+
 .csu-page {
     text-align: center;
 }
-
-.csu-img {
-    width: 70%;
-}
-
 
 @media screen and (max-width: 992px) {
     .csu-header {
         background-position: center;
     }
 
-    .csu-logo, .csu-nav-1 {
+    .csu-logo, .csu-nav-catalog {
         display: none;
     }
 
@@ -189,11 +195,6 @@ video{
     }
 
     .csu-iframe-body {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .csu-card-direction,.csu-card-introduction,.csu-card-tutor {
         margin: 15px 0px;
     }
 }
